@@ -4,9 +4,13 @@ CREATE TABLE backers (
     first_name varchar(50) NOT NULL,
     last_name varchar(50) NOT NULL,
     email varchar(100) NOT NULL,
-    PRIMARY KEY (backer_id),
-    FOREIGN KEY (cf_id) REFERENCES campaign (cf_id)
+    PRIMARY KEY (backer_id)
 );
+
+ALTER TABLE backers
+ADD CONSTRAINT fk_cf_id
+FOREIGN KEY (cf_id) REFERENCES campaign (cf_id);
+
 
 CREATE TABLE campaign (
     cf_id int NOT NULL,
