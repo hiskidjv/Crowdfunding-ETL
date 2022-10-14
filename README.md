@@ -1,1 +1,5 @@
 # Crowdfunding-ETL
+For this repository, I had a couple of unique items to note in my submission:
+1. The start code for deliverable 1 directed us to export our resulting dataframe as a csv though this was no in the module assignment instructions.  I did both the pandas method and the regex method, and I saved the two different resulting dataframes (that have the same results) as backers_pandas and backers_regex in the "Others" folder along with the original backer_info resource file.
+2. To demonstrate the my table did in fact import correctly for deliverable 3, I added the SQL_import_check png file with an image of my query on it.
+3. The crowdfunding_db_schema includes the modifications necessary for postgres instead of simply the text from the ERD creator tool.  I wasn't sure which to save/show, but figured the latter was more significant.  I did not update the code for creating the tables already completed in the module, though they were utilized in this challenge (and their corresponding csv files are in my CSV_files folder.
