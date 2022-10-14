@@ -1,3 +1,11 @@
+backers
+-
+backer_id varchar(5) PK
+cf_id int FK - campaign.cf_id
+first_name varchar(50)
+last_name varchar(50)
+email varchar(100)
+
 campaign
 -
 cf_id int PK
